@@ -1,0 +1,157 @@
+ {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: #eeeeee;
+    color: #222222;
+    margin: 0;
+    padding: 20px;
+}
+
+.conteneur {
+    width: 780px;
+    max-width: 100%;
+    margin: auto;
+    padding: 15px;
+    background: white;
+    border: 5px solid #3388CC;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.identite {
+    border: 2px solid #c6b982;
+    padding: 10px;
+    flex: 1;
+    min-width: 0;
+}
+
+.identite h1 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.bloc-photo {
+    width: 180px;
+    padding: 10px;
+    border: 2px solid #b87575;
+    text-align: center;
+}
+
+.bloc-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rubrique {
+    margin-top: 20px;
+    padding: 8px;
+    border: 2px solid #a66aa6;
+}
+
+.rubrique h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #387c60;
+    margin: 0 0 8px;
+}
+
+.contenu {
+    display: flex;
+    gap: 10px;
+}
+
+.dates {
+    width: 25%;
+    border: 2px solid #72a77d;
+    padding: 5px;
+    overflow-wrap: anywhere;
+}
+
+.informations {
+    flex: 1;
+    min-width: 0;
+    border: 2px solid #7588b5;
+    padding: 5px;
+    overflow-wrap: anywhere;
+}
+
+.dates ul,
+.informations ul {
+    padding-left: 18px;
+    margin: 5px 0;
+}
+
+.dates li,
+.informations li {
+    margin-bottom: 12px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 8px;
+    }
+
+    .conteneur {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .entete {
+        align-items: flex-start;
+        gap: 8px;
+        padding: 4px;
+    }
+
+    .identite {
+        flex: 1;
+        overflow-wrap: anywhere;
+    }
+
+    .identite h1 {
+        font-size: 20px;
+    }
+
+    .bloc-photo {
+        width: 32%;
+        flex-shrink: 0;
+        padding: 4px;
+    }
+
+    .contenu {
+        gap: 5px;
+    }
+
+    .dates {
+        width: 30%;
+        padding: 3px;
+    }
+
+    .informations {
+        padding: 3px;
+    }
+
+    .rubrique {
+        margin-top: 25px;
+        padding: 5px;
+    }
+}
+  
+

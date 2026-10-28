@@ -32,11 +32,6 @@ function verif_age() {
         document.body.style.backgroundColor = "green"
     }
 }
-function calcul_notes(){
-    let note1 =parseFloat (prompt("Note 1 :"));
-    let note2 =parseFloat (prompt("Note 2 :"));
-    let note3 =parseFloat (prompt("Note 3 :"));
-    let moyenne = (note1 + note2 + note3)/ 3;
-    alert("Votre moyenne est :" + moyenne)
-    document.body.innerhtml += "<p>Moyenne :" + moyenne + "</p>";
+function calcul_notes() {
+    
 }
