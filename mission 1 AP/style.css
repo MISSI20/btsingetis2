@@ -1,157 +1,71 @@
- {
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     font-size: 16px;
-    background: #eeeeee;
-    color: #222222;
+    background-color: white;
     margin: 0;
     padding: 20px;
 }
 
 .conteneur {
-    width: 780px;
-    max-width: 100%;
+    width: 700px;
     margin: auto;
-    padding: 15px;
-    background: white;
-    border: 5px solid #3388CC;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #3388CC;
+    box-shadow: 2px 2px 5px gray;
 }
 
 .entete {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
 }
 
-.identite {
-    border: 2px solid #c6b982;
-    padding: 10px;
-    flex: 1;
-    min-width: 0;
+.photo img {
+    width: 100px;
 }
 
-.identite h1 {
-    font-size: 24px;
-    margin-top: 0;
+.section {
+    margin-top: 40px;
 }
 
-.bloc-photo {
-    width: 180px;
-    padding: 10px;
-    border: 2px solid #b87575;
-    text-align: center;
-}
-
-.bloc-photo img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.rubrique {
-    margin-top: 20px;
-    padding: 8px;
-    border: 2px solid #a66aa6;
-}
-
-.rubrique h2 {
+.h2 {
     font-size: 20px;
-    font-weight: bold;
-    color: #387c60;
-    margin: 0 0 8px;
+    border-bottom: 1px solid #3388CC;
+    padding-bottom: 5px;
 }
 
 .contenu {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .dates {
     width: 25%;
-    border: 2px solid #72a77d;
-    padding: 5px;
-    overflow-wrap: anywhere;
 }
 
 .informations {
-    flex: 1;
-    min-width: 0;
-    border: 2px solid #7588b5;
-    padding: 5px;
-    overflow-wrap: anywhere;
+    width: 75%;
 }
 
-.dates ul,
-.informations ul {
-    padding-left: 18px;
-    margin: 5px 0;
+.li {
+    margin-bottom: 8px;
 }
 
-.dates li,
-.informations li {
-    margin-bottom: 12px;
-}
-
-footer {
+.footer {
+    margin-top: 30px;
     text-align: center;
-    margin-top: 25px;
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        padding: 8px;
-    }
-
-    .conteneur {
-        width: 100%;
-        padding: 8px;
-    }
-
-    .entete {
-        align-items: flex-start;
-        gap: 8px;
-        padding: 4px;
-    }
-
-    .identite {
-        flex: 1;
-        overflow-wrap: anywhere;
-    }
-
-    .identite h1 {
-        font-size: 20px;
-    }
-
-    .bloc-photo {
-        width: 32%;
-        flex-shrink: 0;
-        padding: 4px;
-    }
-
-    .contenu {
-        gap: 5px;
-    }
-
-    .dates {
-        width: 30%;
-        padding: 3px;
-    }
-
-    .informations {
-        padding: 3px;
-    }
-
-    .rubrique {
-        margin-top: 25px;
-        padding: 5px;
-    }
+.conteneur {
+        width: auto;
 }
-  
 
+.contenu {
+        display: block;
+}
+
+.dates, .informations {
+    width: auto;
+  }
+}
